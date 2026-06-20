@@ -1,0 +1,377 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+:root{
+--bg:#0F0F0F;
+--text:#ffffff;
+--card:#1A1A1A;
+--accent:#FF6A00;
+--border:#2A2A2A;
+}
+
+body.light{
+--bg:#ffffff;
+--text:#111111;
+--card:#f7f7f7;
+--border:#e5e5e5;
+}
+
+body{
+background:var(--bg);
+color:var(--text);
+}
+
+/* NAV */
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+position:sticky;
+top:0;
+background:var(--bg);
+border-bottom:1px solid var(--border);
+}
+
+nav a{
+margin:0 10px;
+text-decoration:none;
+color:var(--text);
+font-size:14px;
+}
+
+nav a:hover{
+color:var(--accent);
+}
+
+/* THEME BUTTON */
+#theme-toggle{
+background:none;
+border:none;
+font-size:18px;
+cursor:pointer;
+color:var(--text);
+}
+
+/* HERO */
+.hero{
+text-align:center;
+padding:100px 20px;
+}
+
+.highlight{
+color:var(--accent);
+}
+
+.hero-buttons{
+margin-top:20px;
+}
+
+/* BUTTONS */
+.btn{
+padding:10px 18px;
+border-radius:6px;
+text-decoration:none;
+font-size:14px;
+margin:5px;
+}
+
+.primary{
+background:var(--accent);
+color:white;
+}
+
+.secondary{
+border:1px solid var(--border);
+color:var(--text);
+}
+
+/* SECTION */
+section{
+padding:80px 8%;
+}
+
+/* SKILLS */
+.skill{
+margin-bottom:15px;
+}
+
+.progress{
+background:var(--card);
+height:8px;
+border-radius:10px;
+}
+
+.progress-bar{
+background:var(--accent);
+height:100%;
+transition:1s;
+}
+
+/* PROJECT */
+.projects-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.project-card{
+background:var(--card);
+padding:15px;
+border-radius:10px;
+border:1px solid var(--border);
+}
+
+.project-card img{
+width:100%;
+border-radius:8px;
+}
+
+/* CERT */
+.cert-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.certificate-card{
+background:var(--card);
+padding:15px;
+border-radius:10px;
+text-align:center;
+border:1px solid var(--border);
+}
+
+.certificate-card img{
+width:100%;
+border-radius:8px;
+}
+
+/* SOCIAL */
+.social-btn{
+display:inline-flex;
+width:40px;
+height:40px;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+background:var(--card);
+margin:5px;
+}
+
+.social-btn:hover{
+background:var(--accent);
+color:white;
+}
+
+/* MODAL */
+#modal {
+    display: none; /* 🔥 IMPORTANT */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.95);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2000;
+}
+
+#modal img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+#close-modal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+.social-btn i {
+    font-size: 18px;
+    color: var(--text);
+}
+.social-btn:hover i {
+    color: white;
+}
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 5px 8px;
+        font-size: 13px;
+    }
+
+    /* HERO */
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    /* BUTTONS */
+    .btn {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+
+    /* SECTIONS */
+    section {
+        padding: 60px 5%;
+    }
+
+    /* PROJECT GRID */
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* CERT GRID */
+    .cert-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* IMAGES */
+    .project-card img,
+    .certificate-card img {
+        height: auto;
+    }
+}
+.education {
+    padding: 80px 8%;
+}
+
+.edu-card {
+    background: var(--card);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    margin-bottom: 15px;
+    transition: 0.2s;
+}
+
+.edu-card:hover {
+    border-color: var(--accent);
+}
+
+.edu-card h3 {
+    margin-bottom: 5px;
+}
+
+.edu-school {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.edu-year {
+    font-size: 13px;
+    opacity: 0.6;
+}
+.project-links {
+    margin-top: 10px;
+}
+
+.link-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-right: 8px;
+    font-size: 13px;
+    border-radius: 6px;
+    text-decoration: none;
+    background: var(--accent);
+    color: white;
+    transition: 0.2s;
+}
+
+.link-btn:hover {
+    background: #e65c00;
+}
+
+/* Outline style (for GitHub) */
+.link-btn.outline {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+.link-btn.outline:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+.project-links {
+    margin: 10px 0;
+}
+
+.link-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-right: 8px;
+    font-size: 13px;
+    border-radius: 6px;
+    text-decoration: none;
+    background: var(--accent);
+    color: white;
+    transition: 0.2s;
+}
+
+.link-btn:hover {
+    background: #e65c00;
+}
+
+.link-btn.outline {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+.link-btn.outline:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+/* Certificate button */
+.cert-link {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 5px 10px;
+    font-size: 13px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid var(--border);
+    color: var(--text);
+    transition: 0.2s;
+}
+
+.cert-link:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
