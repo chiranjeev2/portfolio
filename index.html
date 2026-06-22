@@ -4,229 +4,251 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chiranjeev Kumar | Portfolio</title>
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
 <body>
 
 <header class="navbar">
-    <div class="logo">Chiranjeev Kumar</div>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#contact">Contacts</a>
-    </nav>
-
-    <button id="theme-toggle">
-        <i class="fas fa-moon"></i>
-    </button>
+  <div class="logo">Chiranjeev Kumar</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="theme-toggle" aria-label="Toggle theme">
+    <i class="fas fa-moon"></i>
+  </button>
 </header>
 
+<!-- HERO -->
 <section id="home" class="hero">
-    <h1>Hi, I'm <span class="highlight">Chiranjeev</span></h1>
-    <h2 class="typing-text"></h2>
-
-    <p>
-        Passionate developer focused on building modern web applications, solving real-world problems and an Ai enthusiast.
-    </p>
-
-    <div class="hero-buttons">
-        <a href="#projects" class="btn primary">View Projects</a>
-        <a href="resume.pdf" download class="btn secondary">Download Resume</a>
-    </div>
+  <div class="hero-badge">Open to Internships · Summer 2027</div>
+  <h1>Hi, I'm <span class="highlight">Chiranjeev</span></h1>
+  <h2 class="typing-text"></h2>
+  <p>2nd Year B.Tech CSE (AI/ML) · Building real systems with C++, WebAssembly & the MERN stack.</p>
+  <div class="hero-buttons">
+    <a href="#projects" class="btn primary">View Projects</a>
+    <a href="resume.pdf" download class="btn secondary">Download Resume</a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-num">2</span><span class="stat-label">Live Projects</span></div>
+    <div class="stat"><span class="stat-num">49%</span><span class="stat-label">Compression Ratio</span></div>
+    <div class="stat"><span class="stat-num">200+</span><span class="stat-label">DSA Problems</span></div>
+    <div class="stat"><span class="stat-num">7.41</span><span class="stat-label">CGPA</span></div>
+  </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about" class="about">
-    <h2>About Me</h2>
-
-    <p>
-        I'm Chiranjeev Kumar, a developer with strong interest in programming 
-        and problem solving with Ai. I work with C, Python and web technologies. Computer Science student with strong fundamentals in Python and C, and hands-on 
-experience in developing real-world projects. Skilled in problem solving and basic 
-web development, seeking an opportunity to apply and grow technical skills in a 
-professional environment. 
-    </p>
-
-    <p>
-        I secured 2nd position in a logo design competition and ranked in Top 30 in a hackathon.
-    </p>
+  <h2>About Me</h2>
+  <p>
+    I'm a 2nd-year B.Tech Computer Science student specialising in AI/ML at Gulzar Group of Institutions, Jalandhar.
+    I build production-grade systems — from a full-stack PWA with offline sync and JWT auth, to a C++ Huffman engine
+    compiled to WebAssembly with a CI/CD pipeline on GitHub Actions. I care about writing clean, purposeful code
+    and understanding how things work at a systems level.
+  </p>
+  <p>
+    Outside of coding, I've placed Top 30 in a regional hackathon (400+ participants) and hold a Cloud Consultant
+    certification (PMKVY, NSQF Level 6, Grade A). I'm actively solving DSA problems and preparing for a
+    Google SWE internship.
+  </p>
 </section>
 
+<!-- SKILLS -->
 <section id="skills" class="skills">
-    <h2>Skills</h2>
+  <h2>Skills</h2>
+  <div class="skills-grid">
 
-    <div class="skill">
-        <span>HTML</span>
-        <div class="progress"><div class="progress-bar" style="width:90%"></div></div>
+    <div class="skill-category">
+      <h3>Languages</h3>
+      <div class="skill-tags">
+        <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+        <span class="skill-tag"><i class="fas fa-code"></i> C++</span>
+        <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+        <span class="skill-tag"><i class="fab fa-html5"></i> HTML5</span>
+        <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+        <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
+      </div>
     </div>
 
-    <div class="skill">
-        <span>CSS</span>
-        <div class="progress"><div class="progress-bar" style="width:85%"></div></div>
+    <div class="skill-category">
+      <h3>Frameworks & Libraries</h3>
+      <div class="skill-tags">
+        <span class="skill-tag"><i class="fab fa-react"></i> React.js</span>
+        <span class="skill-tag"><i class="fab fa-node-js"></i> Node.js</span>
+        <span class="skill-tag"><i class="fas fa-server"></i> Express.js</span>
+        <span class="skill-tag"><i class="fas fa-wind"></i> Tailwind CSS</span>
+        <span class="skill-tag"><i class="fas fa-layer-group"></i> STL</span>
+      </div>
     </div>
 
-    <div class="skill">
-        <span>JavaScript</span>
-        <div class="progress"><div class="progress-bar" style="width:75%"></div></div>
+    <div class="skill-category">
+      <h3>Tools & Platforms</h3>
+      <div class="skill-tags">
+        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+        <span class="skill-tag"><i class="fab fa-github"></i> GitHub</span>
+        <span class="skill-tag"><i class="fas fa-leaf"></i> MongoDB</span>
+        <span class="skill-tag"><i class="fab fa-aws"></i> AWS</span>
+        <span class="skill-tag"><i class="fas fa-infinity"></i> CI/CD</span>
+        <span class="skill-tag"><i class="fas fa-cube"></i> WebAssembly</span>
+      </div>
     </div>
 
-    <div class="skill">
-        <span>Python</span>
-        <div class="progress"><div class="progress-bar" style="width:80%"></div></div>
+    <div class="skill-category">
+      <h3>Concepts</h3>
+      <div class="skill-tags">
+        <span class="skill-tag"><i class="fas fa-sitemap"></i> DSA</span>
+        <span class="skill-tag"><i class="fas fa-exchange-alt"></i> REST APIs</span>
+        <span class="skill-tag"><i class="fas fa-lock"></i> JWT Auth</span>
+        <span class="skill-tag"><i class="fas fa-mobile-alt"></i> PWA</span>
+        <span class="skill-tag"><i class="fas fa-compress"></i> Huffman Encoding</span>
+        <span class="skill-tag"><i class="fas fa-object-group"></i> OOP</span>
+      </div>
     </div>
+
+  </div>
 </section>
-<section id="education" class="education">
-    <h2>Education</h2>
 
-    <div class="edu-card">
-        <h3>B.Tech CSE with specialization in AiMl</h3>
-        <p class="CGPA">CGPA=7.41</p>
-        <p class="edu-school">Gulzar Group of Institutions</p>
-        <p class="edu-year">2024 – 2028</p>
-    </div>
-
-    <div class="edu-card">
-        <h3>Class 12 (Senior Secondary)</h3>
-        <p class="marks">94.8%</p>
-        <p class="edu-school">Teja Singh Sutantar Senior Secondary School </p>
-        <p class="edu-year">2023 – 2024</p>
-    </div>
-
-    <div class="edu-card">
-        <h3>Class 10</h3>
-        <p class="marks">84.2%</p>
-        <p class="edu-school">New Horizon Convent School</p>
-        <p class="edu-year">2021 – 2022</p>
-    </div>
-</section>
-
+<!-- PROJECTS -->
 <section id="projects" class="projects">
-    <h2>Projects</h2>
+  <h2>Projects</h2>
+  <div class="projects-container">
 
-    <div class="projects-container">
-
-        <div class="project-card">
-    <h3>Portfolio Website</h3>
-
-    <div class="project-links">
-        <a href="https://chiranjeev-web.vercel.app" target="_blank" class="link-btn">
-            🚀 Live Demo
-        </a>
-
-        <a href="https://github.com/chiranjeev2/portfolio" target="_blank" class="link-btn outline">
-            💻 GitHub
-        </a>
+    <div class="project-card">
+      <div class="project-header">
+        <h3>Productivity PWA</h3>
+        <span class="project-badge">Full-Stack</span>
+      </div>
+      <p>Offline-first productivity workspace with JWT auth, Service Workers, outbox sync queue, and cloud MongoDB. Achieves 40% lower task-tracking latency vs standard architectures.</p>
+      <div class="project-tech">
+        <span>React</span><span>Node.js</span><span>MongoDB</span><span>JWT</span><span>Workbox</span>
+      </div>
+      <div class="project-links">
+        <a href="https://productivity-pwac.vercel.app/" target="_blank" class="link-btn">🚀 Live Demo</a>
+        <a href="https://github.com/chiranjeev2/productivity-pwa" target="_blank" class="link-btn outline">💻 GitHub</a>
+      </div>
     </div>
 
-    <p>Responsive portfolio with theme switching and animations.</p>
-</div>
-        <div class="project-card">
-    <h3>Portfolio Website</h3>
-
-    <div class="project-links">
-        <a href="https://productivity-pwac.vercel.app/" target="_blank" class="link-btn">
-            🚀 Live Demo
-        </a>
-
-        <a href="https://github.com/chiranjeev2/productivity-pwa" target="_blank" class="link-btn outline">
-            💻 GitHub
-        </a>
+    <div class="project-card">
+      <div class="project-header">
+        <h3>WebAssembly Huffman Compressor</h3>
+        <span class="project-badge">Systems</span>
+      </div>
+      <p>C++17 Huffman engine compiled to WebAssembly via Emscripten. Achieves 49% compression on text (114KB → 57.86KB). Privacy-first: files never leave the browser. Auto-deployed via GitHub Actions CI/CD.</p>
+      <div class="project-tech">
+        <span>C++17</span><span>WebAssembly</span><span>Emscripten</span><span>GitHub Actions</span>
+      </div>
+      <div class="project-links">
+        <a href="https://huffman-file-compressor-one.vercel.app/" target="_blank" class="link-btn">🚀 Live Demo</a>
+        <a href="https://github.com/chiranjeev2/huffman-file-compressor" target="_blank" class="link-btn outline">💻 GitHub</a>
+      </div>
     </div>
 
-    <p>ProdPro is a high-performance, full-stack Progressive Web App (PWA) designed for seamless real-time habit tracking, task execution, and milestone tracking. Built using the decoupled MERN architecture, the application features cross-device synchronization and desktop-grade offline execution wrapper scripts.</p>
-</div>
-
-        <div class="project-card">
-    <h3>WebAssembly Huffman File Compressor</h3>
-
-    <div class="project-links">
-        <a href="https://huffman-file-compressor-one.vercel.app/" target="_blank" class="link-btn">
-            🚀 Live Demo
-        </a>
-
-        <a href="https://github.com/chiranjeev2/huffman-file-compressor" target="_blank" class="link-btn outline">
-            💻 GitHub
-        </a>
+    <div class="project-card">
+      <div class="project-header">
+        <h3>Portfolio Website</h3>
+        <span class="project-badge">Frontend</span>
+      </div>
+      <p>Responsive developer portfolio with dark/light theme switching, typing animation, and certificate modal viewer.</p>
+      <div class="project-tech">
+        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+      </div>
+      <div class="project-links">
+        <a href="https://chiranjeev-web.vercel.app" target="_blank" class="link-btn">🚀 Live Demo</a>
+        <a href="https://github.com/chiranjeev2/portfolio" target="_blank" class="link-btn outline">💻 GitHub</a>
+      </div>
     </div>
 
-    <p>A blazing-fast, browser-native file compressor engineered with C++ and WebAssembly</p>
-</div>
-
-    </div>
+  </div>
 </section>
 
+<!-- EDUCATION -->
+<section id="education" class="education">
+  <h2>Education</h2>
+  <div class="edu-card">
+    <h3>B.Tech CSE — AI/ML Specialization</h3>
+    <p class="edu-school">Gulzar Group of Institutions, affiliated to IKGPTU, Jalandhar</p>
+    <p class="edu-year">2024 – 2028</p>
+    <p class="CGPA">CGPA: 7.41 / 10</p>
+  </div>
+  <div class="edu-card">
+    <h3>Class 12 (Senior Secondary)</h3>
+    <p class="marks">94.8%</p>
+    <p class="edu-school">Teja Singh Sutantar Senior Secondary School</p>
+    <p class="edu-year">2023 – 2024</p>
+  </div>
+  <div class="edu-card">
+    <h3>Class 10</h3>
+    <p class="marks">84.2%</p>
+    <p class="edu-school">New Horizon Convent School</p>
+    <p class="edu-year">2021 – 2022</p>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
 <section id="certificates" class="certificates">
-    <h2>Certificates</h2>
-
-    <div class="cert-container">
-        <div class="certificate-card">
-            <img src="" alt="">
-            <p>Cloud Consultant</p>
-            <a href="images/cert1.jpg" class="cert-link">View</a>
-        </div>
-        <div class="certificate-card">
-            <img src="" alt="">
-            <p>🥈 Logo Design Competition - 2nd Position</p>
-            <a href="images/cert2.jpg" class="cert-link">View</a>
-        </div>
-        <div class="certificate-card">
-            <img src="" alt="">
-            <p>Hackathon</p>
-            <a href="images/cert3.jpg" class="cert-link">View</a>
-        </div>
-        <div class="certificate-card">
-            <img src="" alt="">
-            <p>Sky Scanner SWE simulation by Forage</p>
-            <a href="images/cert4.jpg" class="cert-link">View</a>
-        </div>
-        <div class="certificate-card">
-            <img src="" alt="">
-            <p>AWS IAM &amp EC2 LAB</p>
-            <a href="images/cert5.jpg" class="cert-link">View</a>
-        </div>
+  <h2>Certificates</h2>
+  <div class="cert-container">
+    <div class="certificate-card">
+      <div class="cert-icon"><i class="fas fa-cloud"></i></div>
+      <p>Cloud Consultant</p>
+      <span class="cert-issuer">PMKVY · NASSCOM · Grade A</span>
+      <a href="images/cert1.jpg" class="cert-link">View Certificate</a>
     </div>
+    <div class="certificate-card">
+      <div class="cert-icon"><i class="fas fa-pencil-ruler"></i></div>
+      <p>🥈 Logo Design Competition</p>
+      <span class="cert-issuer">2nd Position</span>
+      <a href="images/cert2.jpg" class="cert-link">View Certificate</a>
+    </div>
+    <div class="certificate-card">
+      <div class="cert-icon"><i class="fas fa-trophy"></i></div>
+      <p>Hackathon — Top 30</p>
+      <span class="cert-issuer">400+ Participants · 36 Hours</span>
+      <a href="images/cert3.jpg" class="cert-link">View Certificate</a>
+    </div>
+    <div class="certificate-card">
+      <div class="cert-icon"><i class="fas fa-plane"></i></div>
+      <p>Skyscanner SWE Simulation</p>
+      <span class="cert-issuer">Forage · June 2026</span>
+      <a href="images/cert4.jpg" class="cert-link">View Certificate</a>
+    </div>
+    <div class="certificate-card">
+      <div class="cert-icon"><i class="fab fa-aws"></i></div>
+      <p>AWS IAM & EC2 Lab</p>
+      <span class="cert-issuer">Cloud Clubs · GGI</span>
+      <a href="images/cert5.jpg" class="cert-link">View Certificate</a>
+    </div>
+  </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="contact">
-    <h2>Contacts</h2>
-
-   <div class="social-links">
-    <a href="https://linkedin.com/in/chiranjeevkumar09" target="_blank" class="social-btn">
-        <i class="fab fa-linkedin-in"></i>
+  <h2>Let's Connect</h2>
+  <p class="contact-sub">Open to internship opportunities · Summer 2027</p>
+  <div class="social-links">
+    <a href="https://linkedin.com/in/chiranjeevkumar09" target="_blank" class="social-btn" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
     </a>
-
-    <a href="https://github.com/chiranjeev2" target="_blank" class="social-btn">
-        <i class="fab fa-github"></i>
+    <a href="https://github.com/chiranjeev2" target="_blank" class="social-btn" aria-label="GitHub">
+      <i class="fab fa-github"></i>
     </a>
-    <a href="mailto:chiranjeevk171@gmail.com" class="social-btn">
-    <i class="fas fa-envelope"></i>
-</a>
-</div>
-    </div>
+    <a href="mailto:chiranjeevk171@gmail.com" class="social-btn" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
 </section>
 
+<!-- MODAL -->
 <div id="modal">
-    <span id="close-modal">&times;</span>
-    <img id="modal-img">
-</div>
-
-<script src="script.js"></script>
-</body>
-</a>
-</div>
-    </div>
-</section>
-
-<div id="modal">
-    <span id="close-modal">&times;</span>
-    <img id="modal-img">
+  <span id="close-modal">&times;</span>
+  <img id="modal-img" alt="Certificate">
 </div>
 
 <script src="script.js"></script>
