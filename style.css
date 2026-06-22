@@ -25,8 +25,9 @@ body{background:var(--bg);color:var(--text);transition:background 0.3s,color 0.3
   display:flex;justify-content:space-between;align-items:center;
   padding:18px 8%;position:sticky;top:0;
   background:var(--bg);border-bottom:1px solid var(--border);
-  z-index:100;transition:background 0.3s;
+  z-index:100;transition:background 0.3s;flex-wrap:wrap;gap:10px;
 }
+.navbar-top{display:contents;} /* on desktop, navbar-top is invisible — children flow normally */
 .logo{font-weight:800;font-size:16px;color:var(--accent);}
 nav a{margin:0 10px;text-decoration:none;color:var(--text);font-size:14px;transition:color 0.2s;}
 nav a:hover{color:var(--accent);}
@@ -193,11 +194,41 @@ section h2::after{
 
 /* MOBILE */
 @media(max-width:768px){
-  .navbar{flex-direction:column;gap:10px;padding:15px;text-align:center;}
-  nav{display:flex;flex-wrap:wrap;justify-content:center;}
-  nav a{margin:5px 8px;font-size:13px;}
+
+  /* NAVBAR — logo + toggle on same row, nav links below */
+  .navbar{
+    flex-direction:column;gap:8px;padding:12px 16px;text-align:center;
+  }
+  .navbar-top{
+    display:flex;justify-content:space-between;align-items:center;width:100%;
+  }
+  nav{display:flex;flex-wrap:wrap;justify-content:center;gap:2px;}
+  nav a{margin:4px 6px;font-size:13px;}
+
+  /* HERO */
+  .hero{padding:60px 16px 50px;}
   .hero h1{font-size:2rem;}
-  .hero-stats{gap:20px;}
+  .hero p{font-size:14px;}
+
+  /* BUTTONS — stack vertically, full width */
+  .hero-buttons{
+    display:flex;flex-direction:column;align-items:center;gap:10px;margin-bottom:32px;
+  }
+  .hero-buttons .btn{
+    width:200px;text-align:center;margin:0;
+  }
+
+  /* STATS — clean 2x2 grid */
+  .hero-stats{
+    display:grid;grid-template-columns:1fr 1fr;
+    gap:16px;max-width:280px;margin:0 auto;
+  }
+  .stat{
+    background:var(--card);border:1px solid var(--border);
+    border-radius:10px;padding:12px 8px;
+  }
+  .stat-num{font-size:1.5rem;}
+
   section{padding:60px 5%;}
   .projects-container{grid-template-columns:1fr;}
   .cert-container{grid-template-columns:repeat(2,1fr);}
